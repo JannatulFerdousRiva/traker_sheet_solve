@@ -10,25 +10,17 @@ class MyApp extends StatelessWidget {
   final List<Map<String, String>> items = const [
     {
       'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAouKtRIxvJBY7OgydxqSh949_UFoJWLMsrg&s',
-      'title': 'kasmir',
-      'subtitle': 'kasmir - Rishiraj',
-      'description': 'A beautiful view of hill.',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlVbSs_TY-xkoxljdVIFw5VhcUQ_Ctiyb-eg&s',
+      'title': 'Sajek Valley',
+      'subtitle': 'Natural beautiful place',
+      'description': 'A beautiful view of hill during sunrise.',
     },
     {
       'image':
-          'https://lp-cms-production.imgix.net/2025-03/Shutterstock2314760055.jpg?w=780&h=425&fit=crop&auto=format&q=75',
-      'title': 'Ladakh',
-      'subtitle': 'Ladakh - Lonely Planet',
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Road_to_Thanchi_%2823%29.jpg/1200px-Road_to_Thanchi_%2823%29.jpg',
+      'title': 'Bandarban',
+      'subtitle': 'Peaceful place',
       'description': 'Where heaven of nature meets wild blue yonder.',
-    },
-    {
-      'image':
-          'https://res.cloudinary.com/enchanting/q_80,f_auto,c_fit,w_640,h_480/exodus-web/2024/10/AdobeStock_405473053.jpeg',
-      'title': 'Sikkim',
-      'subtitle': 'Sikkim Trips',
-      'description':
-          'The unique hill resort of Gangtok acts as the mountainous capital of Sikkim.',
     },
   ];
 
@@ -38,7 +30,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hover Card Effect App"),
+          title: Text("Hover Card"),
           centerTitle: true,
           backgroundColor: Colors.lightBlue,
         ),
@@ -136,7 +128,7 @@ class _CustomCardState extends State<CustomCard> {
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
-                          color: Colors.red,
+                          color: Colors.deepOrangeAccent,
                         ),
                       ),
                       const SizedBox(height: 4),
