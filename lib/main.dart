@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:traker_sheet_solve/firstScreen.dart' show FastHomeScreen;
+import 'package:traker_sheet_solve/loginScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,9 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: FastHomeScreen(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginScreen());
   }
 }
