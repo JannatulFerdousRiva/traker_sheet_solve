@@ -157,6 +157,3 @@ class _CustomCardState extends State<CustomCard> {
     );
   }
 }
-jiurgtj
-kfgjf
-lkfjgi
