@@ -13,49 +13,31 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Task_02"),
+          title: Text("List View"),
           centerTitle: true,
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: const Color.fromARGB(255, 252, 139, 237),
         ),
-        body: ButtonPress(),
-      ),
-    );
-  }
-}
-
-class ButtonPress extends StatefulWidget {
-  const ButtonPress({super.key});
-
-  @override
-  State<ButtonPress> createState() => _ButtonPressState();
-}
-
-class _ButtonPressState extends State<ButtonPress> {
-  String _displyText = "Click The Button";
-
-  void afterButtonPress() {
-    setState(() {
-      _displyText = "Button Pressed";
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              _displyText,
-              style: TextStyle(fontSize: 25, color: Colors.redAccent),
-            ),
-            SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: afterButtonPress,
-              child: Text("Click Here"),
-            ),
-          ],
+        body: Padding(
+          padding: EdgeInsets.all(15.0),
+          child: ListView.builder(
+            itemCount: 30,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: EdgeInsets.symmetric(vertical: 8.0),
+                child: ListTile(
+                  title: Center(
+                    child: Text(
+                      "Items ${index + 1}",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: const Color.fromARGB(255, 29, 172, 255),
+                      ),
+                    ),
+                  ),
+                ),
+              );
+            },
+          ),
         ),
       ),
     );
